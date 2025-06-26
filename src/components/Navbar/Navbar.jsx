@@ -19,13 +19,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a 
-              href="/" 
+            <Link to="/"
               className="text-2xl font-bold text-[#093FB4] hover:text-[#072D8C] transition-colors"
               aria-label="Home"
             >
               code_edu
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation + Search */}
