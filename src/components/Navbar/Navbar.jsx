@@ -18,14 +18,22 @@ const Navbar = () => {
         {/* Main Navbar */}
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <Link to="/"
               className="text-2xl font-bold text-[#093FB4] hover:text-[#072D8C] transition-colors"
               aria-label="Home"
             >
               code_edu
             </Link>
+          </div> */}
+
+          <div
+            className="text-2xl font-bold text-[#093FB4] hover:text-[#072D8C] transition-colors"
+            aria-label="Home"
+          >
+            code_edu
           </div>
+
 
           {/* Desktop Navigation + Search */}
           <div className="hidden md:flex items-center justify-between flex-1 ml-6">
@@ -37,7 +45,7 @@ const Navbar = () => {
             </div>
 
             {/* Search Form */}
-            <form 
+            <form
               className="relative w-64"
               onSubmit={handleSearch}
               role="search"
